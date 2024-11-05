@@ -229,4 +229,4 @@ The endpoints and JSON payloads remain the same:
 
 ---
 
-This configuration completes the To-Do application with the H2 in-memory database and preloaded data. Let me know if you need additional changes or further assistance!
+This configuration completes the To-Do application with the H2 in-memory database and preloaded data.
