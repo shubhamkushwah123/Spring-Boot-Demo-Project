@@ -8,7 +8,8 @@ Here's the modified solution that incorporates using the H2 database and preload
 This Spring Boot project will use an H2 in-memory database to store and manage To-Do tasks, with CRUD (Create, Read, Update, Delete) operations.
 
 ### Prerequisites
-- Java 11 or higher
+- Eclipse IDE or VS Code or IntelliJ or Spring STS
+- Java 11 or 17
 - Spring Boot 3.x
 - H2 Database
 - Postman (for testing)
@@ -28,6 +29,7 @@ src/
 │   └── resources/
 │       ├── application.properties
 │       └── data.sql (preloads data)
+│       └── schema.sql (create tables)
 ```
 
 ### Step-by-Step Instructions
@@ -63,10 +65,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.Data;
+
 
 @Entity
-@Data
 public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -74,6 +75,8 @@ public class Todo {
     private String title;
     private String description;
     private boolean completed;
+
+//generate getters and setters and constructors
 }
 ```
 
