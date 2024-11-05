@@ -1,7 +1,4 @@
 # Spring-Boot-Demo-Project
-
-Here's the modified solution that incorporates using the H2 database and preloading some sample data with `data.sql`. User authentication and AOP are excluded, as requested.
-
 ---
 
 ### Updated Project Overview
